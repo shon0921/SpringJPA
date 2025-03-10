@@ -173,7 +173,7 @@ public class NoticeController {
         String nSeq = CmmUtil.nvl(request.getParameter("nSeq")); // 공지글번호(PK)
 
         /*
-            반드시, 값을 받았으면, 꼭 로그를 찍어서 값이 제대로 들어오는지 파악해야함 반드시 작성할 것
+            반드시, 값을 받았으면, 꼭 로그를 찍어서 값이 제대로 들어오는지 파악해야함 반드시 작성할 것.
          */
         log.info("nSeq: {}", nSeq);
 
