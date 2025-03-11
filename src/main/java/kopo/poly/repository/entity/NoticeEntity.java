@@ -12,6 +12,7 @@ import org.hibernate.annotations.DynamicUpdate;
 @DynamicInsert
 @DynamicUpdate
 @Builder
+@Cacheable
 @Entity
 public class NoticeEntity {
 
@@ -50,5 +51,8 @@ public class NoticeEntity {
 
     @Column(name = "chg_dt")
     private String chgDt;
+
+    @Version
+    private Integer version;    // 낙관적 락을 위한 버전 관리
 
 }
