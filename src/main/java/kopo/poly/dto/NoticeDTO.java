@@ -15,7 +15,8 @@ public record NoticeDTO(
         String regDt, // 등록일
         String chgId, // 수정자 아이디
         String chgDt, // 수정일
-        String userName // 등록자명
+        String userName, // 등록자명
+        Integer version // 낙관적 락을 위한 버전 관리
 ) {
 
 }

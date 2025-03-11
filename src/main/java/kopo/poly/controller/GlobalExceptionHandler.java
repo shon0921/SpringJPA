@@ -4,10 +4,8 @@ package kopo.poly.controller;
 import jakarta.persistence.OptimisticLockException;
 import kopo.poly.controller.response.CommonResponse;
 import kopo.poly.dto.MsgDTO;
-import org.hibernate.exception.ConstraintViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
@@ -73,4 +71,5 @@ public class GlobalExceptionHandler {
 //                        e.getMessage()));
 //
 //    }
+    // 디 버깅 힘들어서 주석 처리 (전체 에러)
 }
