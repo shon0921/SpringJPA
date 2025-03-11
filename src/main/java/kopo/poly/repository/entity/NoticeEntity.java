@@ -54,6 +54,6 @@ public class NoticeEntity {
 
     @Version
     @Column(name = "version", nullable = false)
-    private Integer version = 0;    //
+    private Integer version = 0;    // 기본값 설정
 
 }
