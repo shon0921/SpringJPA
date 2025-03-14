@@ -126,6 +126,8 @@ public class UserInfoController {
     /*
         로그인 처리 및 결과 알려주는 화면으로 이동
      */
+    @ResponseBody
+    @PostMapping(value = "loginProc")
     public MsgDTO loginProc(HttpServletRequest request, HttpSession session) throws Exception {
 
         log.info("{}.loginProc Start!", this.getClass().getName());
@@ -141,7 +143,7 @@ public class UserInfoController {
                 .userId(user_id)
                 .password(EncryptUtil.encHashSHA256(password)).build();
 
-        int res = userInfoService.insertUserInfo(pDTO);
+        int res = userInfoService.getUserLogin(pDTO);
 
         log.info("res : {}", res);
 

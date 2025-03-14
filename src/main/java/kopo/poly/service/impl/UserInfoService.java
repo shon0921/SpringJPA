@@ -84,7 +84,7 @@ public class UserInfoService implements IUserInfoService {
             // 몰론 잘 저장되겠지만, 내가 실행한 save 함수가 DB에 등록이 잘 수행되었는지 100% 확신이 불가능함
             // 회원 가입후, 혹시 저장 안될 수 있기에 조회 수행함
             // 회원 가입 중복 방지를 위해 DB에서 데이터 조회
-            res = userInfoRepository.findByUserId(userId).isEmpty() ? 1 : 0;
+            res = userInfoRepository.findByUserId(userId).isEmpty() ? 0 : 1;
 
         }
 

@@ -37,6 +37,15 @@
     </script>
 </head>
 <body>
+<div class="divTable minimalistBlack">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableCell">로그인된 사용자아이디
+            </div>
+            <div class="divTableCell" th:text="${session.SS_USER_ID + '님이 로그인 되었습니다.'}"></div>
+        </div>
+    </div>
+</div>
 <div></div>
 <br/><br/>
 <button id="btnSend" type="button">메인 화면 이동</button>
