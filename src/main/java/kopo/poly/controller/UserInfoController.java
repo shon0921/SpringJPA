@@ -6,7 +6,6 @@ import kopo.poly.dto.MsgDTO;
 import kopo.poly.dto.UserInfoDTO;
 import kopo.poly.service.IUserInfoService;
 import kopo.poly.util.CmmUtil;
-import kopo.poly.util.EncryptUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
